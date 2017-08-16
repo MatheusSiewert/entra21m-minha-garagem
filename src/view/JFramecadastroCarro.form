@@ -37,94 +37,98 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabelCor" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelNome" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
-                          <Component id="jLabelCodigo" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelAnoFabricacao" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelAnoLancamento" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabeltipoPneu" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelPotencia" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="52" pref="52" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jTextFieldCodigo" max="32767" attributes="0"/>
-                          <Component id="jTextFieldNome" max="32767" attributes="0"/>
-                          <Component id="jTextFieldPotencia" alignment="0" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jSpinnerAnoFabricação" pref="50" max="32767" attributes="0"/>
-                                      <Component id="jSpinnerAnoLancamento" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Component id="jComboBoxCor" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelCor" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelNome" alignment="0" min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Component id="jLabelAnoFabricacao" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelAnoLancamento" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabeltipoPneu" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelPotencia" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <EmptySpace min="52" pref="52" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jTextFieldNome" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldPotencia" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jComboBoxCor" max="32767" attributes="0"/>
+                                          <Component id="jSpinnerAnoFabricação" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jSpinnerAnoLancamento" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabelQuantidadeBatidas" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelPlaca" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelQuilometragem" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelFabricante" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelChassi" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelDataCompra" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelQuantidadePortas" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelEstaFuncional" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelPermitidaCirculacao" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jTextFieldTipoPneu" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldQuantidadeBatidas" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldFabricante" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldPlaca" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldChassi" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldQuilometragem" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTextFieldDataCompra" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jRadioButtonQuantidadePortas2" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                                              <Component id="jRadioButtonQuantidadePortas4" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Component id="jComboBoxEstaFuncional" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jRadioButtonPermitidaCirculacaooSim" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jRadioButtonPermitidaCirculacaooNao" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="0" pref="25" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="162" max="-2" attributes="0"/>
+                                      <Component id="jButtonCancelar" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jButtonSalvar" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
+                                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPaneDescricao" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabelQuantidadeBatidas" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelPlaca" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelQuilometragem" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelFabricante" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelChassi" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelDataCompra" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelQuantidadePortas" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelEstaFuncional" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelPermitidaCirculacao" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jTextFieldTipoPneu" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextFieldQuantidadeBatidas" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextFieldFabricante" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextFieldPlaca" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextFieldChassi" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextFieldQuilometragem" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jTextFieldDataCompra" alignment="0" max="32767" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="jRadioButtonQuantidadePortas2" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jRadioButtonQuantidadePortas3" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jRadioButtonQuantidadePortas4" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="jComboBoxEstaFuncional" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jRadioButtonPermitidaCirculacaooSim" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jRadioButtonPermitidaCirculacaooNao" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace min="0" pref="25" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
-              </Group>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="162" max="-2" attributes="0"/>
-                              <Component id="jButtonCancelar" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jButtonSalvar" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
-                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLabelCodigo" min="-2" pref="55" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -135,10 +139,10 @@
           <Group type="102" attributes="0">
               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTextFieldCodigo" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabelCodigo" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelCodigo" alignment="1" min="-2" pref="16" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jTextFieldNome" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabelNome" alignment="3" max="32767" attributes="0"/>
@@ -162,7 +166,7 @@
                           <Component id="jSpinnerAnoLancamento" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Component id="jScrollPane2" max="32767" attributes="0"/>
+                  <Component id="jScrollPaneDescricao" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -205,7 +209,6 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabelQuantidadePortas" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jRadioButtonQuantidadePortas2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jRadioButtonQuantidadePortas3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jRadioButtonQuantidadePortas4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -244,16 +247,6 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabelCodigo">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="codigo"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="jTextFieldCodigo">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldCodigoActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JLabel" name="jLabelNome">
       <Properties>
         <Property name="text" type="java.lang.String" value="nome"/>
@@ -314,11 +307,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Salvar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonSalvarActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButtonCancelar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cancelar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonCancelarActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabelFabricante">
       <Properties>
@@ -326,6 +325,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextFieldFabricante">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldFabricanteActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabelPlaca">
       <Properties>
@@ -364,6 +366,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextFieldDataCompra">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabelEstaFuncional">
       <Properties>
@@ -392,6 +397,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Sim"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButtonPermitidaCirculacaooSimActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jRadioButtonPermitidaCirculacaooNao">
       <Properties>
@@ -411,14 +419,6 @@
         <Property name="text" type="java.lang.String" value="2"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="jRadioButtonQuantidadePortas3">
-      <Properties>
-        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-          <ComponentRef name="buttonGroupQuantidadePortas"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="3"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JRadioButton" name="jRadioButtonQuantidadePortas4">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
@@ -432,14 +432,14 @@
         <Property name="text" type="java.lang.String" value="Descri&#xe7;&#xe3;o"/>
       </Properties>
     </Component>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+    <Container class="javax.swing.JScrollPane" name="jScrollPaneDescricao">
       <AuxValues>
         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
       </AuxValues>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextArea" name="jTextArea2">
+        <Component class="javax.swing.JTextArea" name="jTextAreaDescricao">
           <Properties>
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="5"/>
@@ -447,5 +447,12 @@
         </Component>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="C&#xf3;digo"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelCodigo">
+    </Component>
   </SubComponents>
 </Form>
