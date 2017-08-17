@@ -74,6 +74,8 @@ public class JFramecadastroCarro extends javax.swing.JFrame {
         jTextAreaDescricao = new javax.swing.JTextArea();
         jLabel3 = new javax.swing.JLabel();
         jLabelCodigo = new javax.swing.JLabel();
+        jLabelRenavam = new javax.swing.JLabel();
+        jTextFieldRenavam = new javax.swing.JTextField();
 
         jLabel1.setText("jLabel1");
 
@@ -169,6 +171,8 @@ public class JFramecadastroCarro extends javax.swing.JFrame {
 
         jLabel3.setText("Código");
 
+        jLabelRenavam.setText("Renavam");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -228,7 +232,8 @@ public class JFramecadastroCarro extends javax.swing.JFrame {
                                                 .addComponent(jRadioButtonPermitidaCirculacaooSim)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(jRadioButtonPermitidaCirculacaooNao)))
-                                        .addGap(0, 25, Short.MAX_VALUE)))))
+                                        .addGap(0, 25, Short.MAX_VALUE))
+                                    .addComponent(jTextFieldRenavam))))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -246,18 +251,21 @@ public class JFramecadastroCarro extends javax.swing.JFrame {
                                 .addComponent(jScrollPaneDescricao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(80, 80, 80))))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabelCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabelCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabelRenavam))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabelCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelCodigo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextFieldNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -328,7 +336,10 @@ public class JFramecadastroCarro extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabelEstaFuncional)
                                     .addComponent(jComboBoxEstaFuncional, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(21, 21, 21))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabelRenavam)
+                            .addComponent(jTextFieldRenavam, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(340, 340, 340)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -376,6 +387,8 @@ public class JFramecadastroCarro extends javax.swing.JFrame {
         meuCarro.setQuilometragem(Float.parseFloat(jTextFieldQuilometragem.getText()));
         
         meuCarro.setDescricao(jTextAreaDescricao.getText());
+        
+        meuCarro.setRenavam(Integer.parseInt(jTextFieldRenavam.getText()));
 
         String dataCompra = jTextFieldDataCompra.getText();
 
@@ -481,6 +494,7 @@ public class JFramecadastroCarro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelQuantidadeBatidas;
     private javax.swing.JLabel jLabelQuantidadePortas;
     private javax.swing.JLabel jLabelQuilometragem;
+    private javax.swing.JLabel jLabelRenavam;
     private javax.swing.JLabel jLabeltipoPneu;
     private javax.swing.JRadioButton jRadioButtonPermitidaCirculacaooNao;
     private javax.swing.JRadioButton jRadioButtonPermitidaCirculacaooSim;
@@ -498,6 +512,7 @@ public class JFramecadastroCarro extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldPotencia;
     private javax.swing.JTextField jTextFieldQuantidadeBatidas;
     private javax.swing.JTextField jTextFieldQuilometragem;
+    private javax.swing.JTextField jTextFieldRenavam;
     private javax.swing.JTextField jTextFieldTipoPneu;
     // End of variables declaration//GEN-END:variables
 }
