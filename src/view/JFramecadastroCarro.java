@@ -76,10 +76,12 @@ public class JFramecadastroCarro extends javax.swing.JFrame {
         jLabelCodigo = new javax.swing.JLabel();
         jLabelRenavam = new javax.swing.JLabel();
         jTextFieldRenavam = new javax.swing.JTextField();
+        jButtonExcluir = new javax.swing.JButton();
 
         jLabel1.setText("jLabel1");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Cadastro de carro");
 
         jLabelNome.setText("nome");
 
@@ -173,6 +175,13 @@ public class JFramecadastroCarro extends javax.swing.JFrame {
 
         jLabelRenavam.setText("Renavam");
 
+        jButtonExcluir.setText("Excluir");
+        jButtonExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonExcluirActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -232,24 +241,22 @@ public class JFramecadastroCarro extends javax.swing.JFrame {
                                                 .addComponent(jRadioButtonPermitidaCirculacaooSim)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(jRadioButtonPermitidaCirculacaooNao)))
-                                        .addGap(0, 25, Short.MAX_VALUE))
+                                        .addGap(0, 71, Short.MAX_VALUE))
                                     .addComponent(jTextFieldRenavam))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(162, 162, 162)
-                                        .addComponent(jButtonCancelar)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jButtonSalvar))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(119, 119, 119)
-                                        .addComponent(jLabel2)))
-                                .addGap(26, 26, 26))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jScrollPaneDescricao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(80, 80, 80))))
+                                .addGap(29, 29, 29)
+                                .addComponent(jButtonExcluir)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jButtonCancelar)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jButtonSalvar))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(75, 75, 75)
+                                .addComponent(jLabel2))
+                            .addComponent(jScrollPaneDescricao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(26, 26, 26))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -344,11 +351,13 @@ public class JFramecadastroCarro extends javax.swing.JFrame {
                         .addGap(340, 340, 340)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButtonSalvar)
-                            .addComponent(jButtonCancelar))))
+                            .addComponent(jButtonCancelar)
+                            .addComponent(jButtonExcluir))))
                 .addContainerGap())
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextFieldPotenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldPotenciaActionPerformed
@@ -435,6 +444,21 @@ public class JFramecadastroCarro extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButtonPermitidaCirculacaooSimActionPerformed
 
+    private void jButtonExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonExcluirActionPerformed
+        if(jLabelCodigo.getText().equals("")){
+            
+        }else{
+            int codigo = Integer.parseInt(jLabelCodigo.getText());
+            CarroDAO dao = new CarroDAO();
+            if(dao.excluir(codigo) == Utilitarios.NAO_FOI_POSSIVEL_EXCLUIR){
+                JOptionPane.showMessageDialog(null,"Não foi possivel excluir");
+            }else{
+                JOptionPane.showMessageDialog(null,"Exclusão realizada com sucesso");
+                dispose();
+            }
+        }
+    }//GEN-LAST:event_jButtonExcluirActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -473,6 +497,7 @@ public class JFramecadastroCarro extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroupQuantidadePortas;
     private javax.swing.JButton jButtonCancelar;
+    private javax.swing.JButton jButtonExcluir;
     private javax.swing.JButton jButtonSalvar;
     private javax.swing.JComboBox jComboBoxCor;
     private javax.swing.JComboBox jComboBoxEstaFuncional;
