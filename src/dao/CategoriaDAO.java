@@ -90,7 +90,7 @@ public class CategoriaDAO {
 
     public ArrayList<Categoria> retornarListaCategorias() {
         ArrayList<Categoria> categorias = new ArrayList<>();
-        String sql = "SELECT id, nome, descricao" + "/nFROM categorias";
+        String sql = "SELECT id, nome, descricao, ativo FROM categorias";
         try{
             Statement stmt = Conexao.conectar().createStatement();
             ResultSet rs = stmt.executeQuery(sql);

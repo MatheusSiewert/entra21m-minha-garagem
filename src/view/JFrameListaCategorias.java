@@ -70,6 +70,7 @@ public class JFrameListaCategorias extends javax.swing.JFrame {
             jTableCategorias.getColumnModel().getColumn(1).setResizable(false);
             jTableCategorias.getColumnModel().getColumn(2).setResizable(false);
         }
+        popularLista();
 
         jButtonCadastrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/salvar.png"))); // NOI18N
         jButtonCadastrar.setText("Cadastrar");
